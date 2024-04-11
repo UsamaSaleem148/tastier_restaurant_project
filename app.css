@@ -1,0 +1,283 @@
+/* Apply a global reset for all elements */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Set a minimum font size for all devices */
+html {
+  font-size: 16px;
+}
+
+/* Set the background color for the entire page */
+body {
+  background-color: #ffffff;
+  font-family: 'Barlow', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.logo {
+  font-size: 30px;
+}
+
+.burger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.burger {
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+  margin: 5px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links li a {
+  color: #000;
+  font-size: 20px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+}
+
+#menu {
+  max-width: 800px;
+  margin: 6% auto 0px auto;
+}
+
+#menu h1 {
+  margin-bottom: 20px;
+}
+
+#search {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid #f0f0f0;
+  border-radius: 6px;
+}
+
+#filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#filters label {
+  margin-right: 10px;
+}
+
+#allergens {
+  font-size: 1rem;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item-box {
+  max-width: 50%;
+  flex: 1 0 40%;
+  margin: 10px;
+  background-color: #ffffff;
+  border: 1px solid #f0f0f0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  overflow: hidden;
+}
+
+.image img {
+  display: block;
+  width: 100%;
+  height: 250px;
+}
+
+.categories {
+  font-style: italic;
+}
+
+.description h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 20px;
+}
+
+.description p {
+  padding: 0px;
+  margin: 0px 0px 20px 0px;
+}
+
+.price {
+  color: #ec7905;
+  padding: 0px 20px;
+  margin-bottom: 20px;
+}
+
+#checkbox-vegan input,
+#checkbox-vegetarian input {
+  display: none;
+}
+
+#checkbox-vegan,
+#checkbox-vegetarian {
+  background-color: #ebebeb;
+  padding: 10px 15px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.activeCheckBox {
+  color: #ec7905;
+  background-color: #faf1e4 !important;
+}
+
+footer {
+  background-color: #2b2b2b;
+  color: #fff;
+  font-size: 1.2rem;
+  padding-top: 50px;
+  margin-top: 40px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+}
+
+.footer-menu,
+.footer-hours,
+.footer-contact {
+  flex-basis: 33.33%;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color: #ec7905;
+}
+
+.footer-bottom {
+  background-color: #1a1a1a;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  #menu {
+    max-width: 100%;
+    padding: 20px;
+    margin: 20% auto 0px auto;
+  }
+
+  .item-box {
+    max-width: 100%;
+    flex: 0 0 100%;
+    padding-bottom: 20px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 770px) {
+  #menu {
+    max-width: 600px;
+    padding: 20px;
+    margin: 20% auto 0px auto;
+  }
+
+  .item-box {
+    max-width: 50%;
+    flex: 1 0 40%;
+    padding-bottom: 20px;
+  }
+}

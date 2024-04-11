@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My TypeScript Web Application</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#">Tastier</a>
+        </div>
+        <div class="burger-menu">
+          <div class="burger"></div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="menu">
+      <h1>Menu</h1>
+      <input type="text" id="search" placeholder="Search..." />
+      <div id="filters">
+        <label id="checkbox-vegan"><input type="checkbox" id="vegan" /> Vegan</label>
+        <label id="checkbox-vegetarian"><input type="checkbox" id="vegetarian" /> Vegetarian</label>
+        <div>
+          <label for="allergens">Allergens</label>
+          <select id="allergens">
+            <option value="">--Select--</option>
+            <option value="peanut">Peanut</option>
+            <option value="soy">Soy</option>
+            <option value="milk">Milk</option>
+            <option value="shellfish">Shellfish</option>
+            <option value="gluten">Gluten</option>
+            <option value="dairy">Dairy</option>
+            <option value="nuts">Nuts</option>
+            <option value="egg">Egg</option>
+            <option value="fish">Fish</option>
+            <option value="sesame">Sesame</option>
+            <option value="mustard">Mustard</option>
+            <option value="wheat">Wheat</option>
+            <option value="sulfites">Sulfites</option>
+            <option value="corn">Corn</option>
+            <option value="meat">Meat</option>
+          </select>
+        </div>
+      </div>
+      <div id="container">
+        <!-- Menu items will be dynamically added here -->
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-menu">
+          <h3>Tastier</h3>
+          <ul>
+            <li><a href="#">Appetizers</a></li>
+            <li><a href="#">Entrees</a></li>
+            <li><a href="#">Desserts</a></li>
+            <li><a href="#">Drinks</a></li>
+          </ul>
+        </div>
+        <div class="footer-hours">
+          <h3>Hours</h3>
+          <ul>
+            <li>Mon - Fri: 11am - 10pm</li>
+            <li>Sat - Sun: 9am - 11pm</li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact</h3>
+          <ul>
+            <li>123 Street</li>
+            <li>Islamabad, Pakistan</li>
+            <li>0343-5023325</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p>&copy; 2023 Tastier. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./dist/menu.js"></script>
+  </body>
+</html>

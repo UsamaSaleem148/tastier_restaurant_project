@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "lib": [
+            "es6",
+            "dom",
+            "es2017"
+        ],
+        "target": "es6",
+        "module": "commonjs",
+        "sourceMap": true,
+        "outDir": "./dist",
+    },
+    "include": [
+        "./menu.ts"
+    ]
+}
