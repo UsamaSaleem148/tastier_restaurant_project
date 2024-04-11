@@ -47,3 +47,5 @@ Open the index.html file in your browser to view the application.
 This project is developed by Muhammad Usama Saleem. Feel free to contribute by submitting bug reports, feature requests, or pull requests.
 
 # Screenshots
+
+![Screenshot_11-4-2024_11816_](https://github.com/UsamaSaleem148/tastier_restaurant_project/assets/28651129/0c1864bb-3208-4a07-bacb-68166a273b9e)
